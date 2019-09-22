@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4bc0c2bfc9e840f3a230738c8ec7e754" Name="Diagram1">
+        <EntityTypeShape EntityType="CariHesapModel.Categories" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CariHesapModel.Customers" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CariHesapModel.Products" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CariHesapModel.SaleDapertment" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CariHesapModel.Users" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="CariHesapModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="CariHesapModel.FK_Customers_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="CariHesapModel.FK_SaleDapertment_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="CariHesapModel.FK_SaleDapertment_Products" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
