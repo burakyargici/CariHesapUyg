@@ -17,6 +17,13 @@ namespace CariHesap.DAL
                 return che.Customers.Where(cs => cs.userId == userId).ToList();
             }
         }
+        public static Customers GetCustomerByName(string name)
+        {
+            using (var che = new CariHesapEntities())
+            {
+                return che.Customers.FirstOrDefault(c => c.customerName == name);
+            }
+        }
 
         public static SaveModel CustomerCUD(Customers customer, EntityState entityState)
         {
@@ -37,6 +44,14 @@ namespace CariHesap.DAL
                 }
             }
             return saveModel;
+        }
+
+        public static List<string> GetCustomerNamesByUserId(int userId)
+        {
+            using (var che = new CariHesapEntities())
+            {
+                return che.Customers.Where(cs => cs.userId == userId).Select(cs=> cs.customerName).ToList();
+            }
         }
     }
 }

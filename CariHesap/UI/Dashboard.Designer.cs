@@ -62,8 +62,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.lblSituation = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.listView4 = new System.Windows.Forms.ListView();
+            this.reportList = new System.Windows.Forms.ListView();
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -72,12 +74,12 @@
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.dtpEnd = new System.Windows.Forms.DateTimePicker();
+            this.dtpStart = new System.Windows.Forms.DateTimePicker();
+            this.search = new System.Windows.Forms.TextBox();
+            this.rbCategoryName = new System.Windows.Forms.RadioButton();
+            this.rbProductName = new System.Windows.Forms.RadioButton();
+            this.rbCustomer = new System.Windows.Forms.RadioButton();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -85,21 +87,21 @@
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.button15 = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.saleProductCustomer = new System.Windows.Forms.ComboBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.sellProductCountTxt = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.selectedProductNameTxt = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.listView5 = new System.Windows.Forms.ListView();
+            this.saleListView = new System.Windows.Forms.ListView();
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button14 = new System.Windows.Forms.Button();
+            this.saleListBtn = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.saleCatList = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.kategoriDuzenleCombo = new System.Windows.Forms.ComboBox();
@@ -143,21 +145,21 @@
             this.urunDuzenleBtn = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.modifyCatBtn = new System.Windows.Forms.Button();
+            this.modifyCatExpTxt = new System.Windows.Forms.RichTextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.modifyCatNameTxt = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.addCatBtn = new System.Windows.Forms.Button();
+            this.addCatExpTxt = new System.Windows.Forms.RichTextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.addCatNameTxt = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.deleteCatBtn = new System.Windows.Forms.Button();
+            this.UploadCatBtn = new System.Windows.Forms.Button();
             this.CategoryListView = new System.Windows.Forms.ListView();
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -181,6 +183,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox16.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -552,6 +555,8 @@
             // 
             // groupBox16
             // 
+            this.groupBox16.Controls.Add(this.lblSituation);
+            this.groupBox16.Controls.Add(this.label38);
             this.groupBox16.Location = new System.Drawing.Point(33, 404);
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.Size = new System.Drawing.Size(218, 80);
@@ -559,9 +564,27 @@
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Genel Kar-Zarar Durumu";
             // 
+            // lblSituation
+            // 
+            this.lblSituation.AutoSize = true;
+            this.lblSituation.Location = new System.Drawing.Point(127, 32);
+            this.lblSituation.Name = "lblSituation";
+            this.lblSituation.Size = new System.Drawing.Size(41, 13);
+            this.lblSituation.TabIndex = 1;
+            this.lblSituation.Text = "label39";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(28, 32);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(69, 13);
+            this.label38.TabIndex = 0;
+            this.label38.Text = "KAR-ZARAR";
+            // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.listView4);
+            this.groupBox15.Controls.Add(this.reportList);
             this.groupBox15.Location = new System.Drawing.Point(33, 196);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(503, 189);
@@ -569,10 +592,10 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Sonuç";
             // 
-            // listView4
+            // reportList
             // 
-            this.listView4.BackColor = System.Drawing.SystemColors.Info;
-            this.listView4.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.reportList.BackColor = System.Drawing.SystemColors.Info;
+            this.reportList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader12,
             this.columnHeader13,
             this.columnHeader14,
@@ -580,14 +603,14 @@
             this.columnHeader16,
             this.columnHeader17,
             this.columnHeader18});
-            this.listView4.GridLines = true;
-            this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(6, 19);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(488, 164);
-            this.listView4.TabIndex = 0;
-            this.listView4.UseCompatibleStateImageBehavior = false;
-            this.listView4.View = System.Windows.Forms.View.Details;
+            this.reportList.GridLines = true;
+            this.reportList.HideSelection = false;
+            this.reportList.Location = new System.Drawing.Point(6, 19);
+            this.reportList.Name = "reportList";
+            this.reportList.Size = new System.Drawing.Size(488, 164);
+            this.reportList.TabIndex = 0;
+            this.reportList.UseCompatibleStateImageBehavior = false;
+            this.reportList.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader12
             // 
@@ -626,12 +649,12 @@
             // 
             // groupBox14
             // 
-            this.groupBox14.Controls.Add(this.dateTimePicker2);
-            this.groupBox14.Controls.Add(this.dateTimePicker1);
-            this.groupBox14.Controls.Add(this.textBox24);
-            this.groupBox14.Controls.Add(this.radioButton3);
-            this.groupBox14.Controls.Add(this.radioButton2);
-            this.groupBox14.Controls.Add(this.radioButton1);
+            this.groupBox14.Controls.Add(this.dtpEnd);
+            this.groupBox14.Controls.Add(this.dtpStart);
+            this.groupBox14.Controls.Add(this.search);
+            this.groupBox14.Controls.Add(this.rbCategoryName);
+            this.groupBox14.Controls.Add(this.rbProductName);
+            this.groupBox14.Controls.Add(this.rbCustomer);
             this.groupBox14.Controls.Add(this.label31);
             this.groupBox14.Controls.Add(this.label30);
             this.groupBox14.Controls.Add(this.label29);
@@ -644,63 +667,64 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Filtreler";
             // 
-            // dateTimePicker2
+            // dtpEnd
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(254, 98);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(106, 20);
-            this.dateTimePicker2.TabIndex = 8;
+            this.dtpEnd.Location = new System.Drawing.Point(254, 98);
+            this.dtpEnd.Name = "dtpEnd";
+            this.dtpEnd.Size = new System.Drawing.Size(106, 20);
+            this.dtpEnd.TabIndex = 8;
             // 
-            // dateTimePicker1
+            // dtpStart
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(130, 98);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(106, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpStart.Location = new System.Drawing.Point(130, 98);
+            this.dtpStart.Name = "dtpStart";
+            this.dtpStart.Size = new System.Drawing.Size(106, 20);
+            this.dtpStart.TabIndex = 7;
             // 
-            // textBox24
+            // search
             // 
-            this.textBox24.Location = new System.Drawing.Point(130, 64);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(284, 20);
-            this.textBox24.TabIndex = 6;
+            this.search.Location = new System.Drawing.Point(130, 64);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(284, 20);
+            this.search.TabIndex = 6;
+            this.search.TextChanged += new System.EventHandler(this.Search_TextChanged);
             // 
-            // radioButton3
+            // rbCategoryName
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(351, 29);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(64, 17);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Kategori";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbCategoryName.AutoSize = true;
+            this.rbCategoryName.Location = new System.Drawing.Point(351, 29);
+            this.rbCategoryName.Margin = new System.Windows.Forms.Padding(2);
+            this.rbCategoryName.Name = "rbCategoryName";
+            this.rbCategoryName.Size = new System.Drawing.Size(64, 17);
+            this.rbCategoryName.TabIndex = 5;
+            this.rbCategoryName.TabStop = true;
+            this.rbCategoryName.Text = "Kategori";
+            this.rbCategoryName.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbProductName
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(244, 29);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(66, 17);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Ürün Adı";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbProductName.AutoSize = true;
+            this.rbProductName.Location = new System.Drawing.Point(244, 29);
+            this.rbProductName.Margin = new System.Windows.Forms.Padding(2);
+            this.rbProductName.Name = "rbProductName";
+            this.rbProductName.Size = new System.Drawing.Size(66, 17);
+            this.rbProductName.TabIndex = 4;
+            this.rbProductName.TabStop = true;
+            this.rbProductName.Text = "Ürün Adı";
+            this.rbProductName.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbCustomer
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(130, 29);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 17);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Müşteri";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbCustomer.AutoSize = true;
+            this.rbCustomer.Location = new System.Drawing.Point(130, 29);
+            this.rbCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.rbCustomer.Name = "rbCustomer";
+            this.rbCustomer.Size = new System.Drawing.Size(59, 17);
+            this.rbCustomer.TabIndex = 3;
+            this.rbCustomer.TabStop = true;
+            this.rbCustomer.Text = "Müşteri";
+            this.rbCustomer.UseVisualStyleBackColor = true;
             // 
             // label31
             // 
@@ -748,17 +772,17 @@
             // 
             this.groupBox17.Controls.Add(this.button15);
             this.groupBox17.Controls.Add(this.label37);
-            this.groupBox17.Controls.Add(this.comboBox4);
+            this.groupBox17.Controls.Add(this.saleProductCustomer);
             this.groupBox17.Controls.Add(this.label36);
-            this.groupBox17.Controls.Add(this.textBox26);
+            this.groupBox17.Controls.Add(this.sellProductCountTxt);
             this.groupBox17.Controls.Add(this.label35);
-            this.groupBox17.Controls.Add(this.textBox25);
+            this.groupBox17.Controls.Add(this.selectedProductNameTxt);
             this.groupBox17.Controls.Add(this.label34);
             this.groupBox17.Controls.Add(this.label33);
-            this.groupBox17.Controls.Add(this.listView5);
-            this.groupBox17.Controls.Add(this.button14);
+            this.groupBox17.Controls.Add(this.saleListView);
+            this.groupBox17.Controls.Add(this.saleListBtn);
             this.groupBox17.Controls.Add(this.label32);
-            this.groupBox17.Controls.Add(this.comboBox3);
+            this.groupBox17.Controls.Add(this.saleCatList);
             this.groupBox17.Location = new System.Drawing.Point(19, 21);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Size = new System.Drawing.Size(671, 496);
@@ -777,6 +801,7 @@
             this.button15.TabIndex = 12;
             this.button15.Text = "Satışı Tamamla";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.Button15_Click);
             // 
             // label37
             // 
@@ -787,14 +812,15 @@
             this.label37.TabIndex = 11;
             this.label37.Text = "Müşteriler bölümünden yeni müşteri ekleyebilirsiniz.";
             // 
-            // comboBox4
+            // saleProductCustomer
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(129, 363);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(184, 21);
-            this.comboBox4.TabIndex = 10;
+            this.saleProductCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.saleProductCustomer.FormattingEnabled = true;
+            this.saleProductCustomer.Location = new System.Drawing.Point(129, 363);
+            this.saleProductCustomer.Name = "saleProductCustomer";
+            this.saleProductCustomer.Size = new System.Drawing.Size(184, 21);
+            this.saleProductCustomer.TabIndex = 10;
+            this.saleProductCustomer.SelectedIndexChanged += new System.EventHandler(this.SellProductCustomerTxt_SelectedIndexChanged);
             // 
             // label36
             // 
@@ -805,12 +831,13 @@
             this.label36.TabIndex = 9;
             this.label36.Text = "Müşteri";
             // 
-            // textBox26
+            // sellProductCountTxt
             // 
-            this.textBox26.Location = new System.Drawing.Point(129, 337);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(184, 20);
-            this.textBox26.TabIndex = 8;
+            this.sellProductCountTxt.Location = new System.Drawing.Point(129, 337);
+            this.sellProductCountTxt.Name = "sellProductCountTxt";
+            this.sellProductCountTxt.Size = new System.Drawing.Size(184, 20);
+            this.sellProductCountTxt.TabIndex = 8;
+            this.sellProductCountTxt.TextChanged += new System.EventHandler(this.SellProductCountTxt_TextChanged);
             // 
             // label35
             // 
@@ -821,12 +848,12 @@
             this.label35.TabIndex = 7;
             this.label35.Text = "Adet";
             // 
-            // textBox25
+            // selectedProductNameTxt
             // 
-            this.textBox25.Location = new System.Drawing.Point(129, 311);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(184, 20);
-            this.textBox25.TabIndex = 6;
+            this.selectedProductNameTxt.Location = new System.Drawing.Point(129, 311);
+            this.selectedProductNameTxt.Name = "selectedProductNameTxt";
+            this.selectedProductNameTxt.Size = new System.Drawing.Size(184, 20);
+            this.selectedProductNameTxt.TabIndex = 6;
             // 
             // label34
             // 
@@ -846,22 +873,23 @@
             this.label33.TabIndex = 4;
             this.label33.Text = "Satış yapmak için listeden ürün seçiniz.";
             // 
-            // listView5
+            // saleListView
             // 
-            this.listView5.BackColor = System.Drawing.SystemColors.Info;
-            this.listView5.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.saleListView.BackColor = System.Drawing.SystemColors.Info;
+            this.saleListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader19,
             this.columnHeader20,
             this.columnHeader21,
             this.columnHeader22});
-            this.listView5.GridLines = true;
-            this.listView5.HideSelection = false;
-            this.listView5.Location = new System.Drawing.Point(37, 108);
-            this.listView5.Name = "listView5";
-            this.listView5.Size = new System.Drawing.Size(482, 157);
-            this.listView5.TabIndex = 3;
-            this.listView5.UseCompatibleStateImageBehavior = false;
-            this.listView5.View = System.Windows.Forms.View.Details;
+            this.saleListView.GridLines = true;
+            this.saleListView.HideSelection = false;
+            this.saleListView.Location = new System.Drawing.Point(37, 108);
+            this.saleListView.Name = "saleListView";
+            this.saleListView.Size = new System.Drawing.Size(482, 157);
+            this.saleListView.TabIndex = 3;
+            this.saleListView.UseCompatibleStateImageBehavior = false;
+            this.saleListView.View = System.Windows.Forms.View.Details;
+            this.saleListView.SelectedIndexChanged += new System.EventHandler(this.SaleListView_SelectedIndexChanged);
             // 
             // columnHeader19
             // 
@@ -883,17 +911,18 @@
             this.columnHeader22.Text = "Açıklama";
             this.columnHeader22.Width = 209;
             // 
-            // button14
+            // saleListBtn
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(254, 38);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(83, 40);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "Listele";
-            this.button14.UseVisualStyleBackColor = false;
+            this.saleListBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saleListBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saleListBtn.Location = new System.Drawing.Point(254, 38);
+            this.saleListBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.saleListBtn.Name = "saleListBtn";
+            this.saleListBtn.Size = new System.Drawing.Size(83, 40);
+            this.saleListBtn.TabIndex = 2;
+            this.saleListBtn.Text = "Listele";
+            this.saleListBtn.UseVisualStyleBackColor = false;
+            this.saleListBtn.Click += new System.EventHandler(this.SaleListBtn_Click);
             // 
             // label32
             // 
@@ -904,14 +933,15 @@
             this.label32.TabIndex = 1;
             this.label32.Text = "Listelenecek ürün kategorisi seçiniz.";
             // 
-            // comboBox3
+            // saleCatList
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(37, 41);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(192, 21);
-            this.comboBox3.TabIndex = 0;
+            this.saleCatList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.saleCatList.FormattingEnabled = true;
+            this.saleCatList.Location = new System.Drawing.Point(37, 41);
+            this.saleCatList.Name = "saleCatList";
+            this.saleCatList.Size = new System.Drawing.Size(192, 21);
+            this.saleCatList.TabIndex = 0;
+            this.saleCatList.SelectedIndexChanged += new System.EventHandler(this.SaleCatList_SelectedIndexChanged);
             // 
             // tabPage4
             // 
@@ -1350,10 +1380,10 @@
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.button12);
-            this.groupBox12.Controls.Add(this.richTextBox2);
+            this.groupBox12.Controls.Add(this.modifyCatBtn);
+            this.groupBox12.Controls.Add(this.modifyCatExpTxt);
             this.groupBox12.Controls.Add(this.label24);
-            this.groupBox12.Controls.Add(this.textBox20);
+            this.groupBox12.Controls.Add(this.modifyCatNameTxt);
             this.groupBox12.Controls.Add(this.label25);
             this.groupBox12.Location = new System.Drawing.Point(355, 266);
             this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
@@ -1364,26 +1394,27 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Kategori Düzenle";
             // 
-            // button12
+            // modifyCatBtn
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(200, 129);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(84, 32);
-            this.button12.TabIndex = 6;
-            this.button12.Text = "Düzenle";
-            this.button12.UseVisualStyleBackColor = false;
+            this.modifyCatBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.modifyCatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modifyCatBtn.Location = new System.Drawing.Point(200, 129);
+            this.modifyCatBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.modifyCatBtn.Name = "modifyCatBtn";
+            this.modifyCatBtn.Size = new System.Drawing.Size(84, 32);
+            this.modifyCatBtn.TabIndex = 6;
+            this.modifyCatBtn.Text = "Düzenle";
+            this.modifyCatBtn.UseVisualStyleBackColor = false;
+            this.modifyCatBtn.Click += new System.EventHandler(this.ModifyCatBtn_Click);
             // 
-            // richTextBox2
+            // modifyCatExpTxt
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(117, 64);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(168, 55);
-            this.richTextBox2.TabIndex = 5;
-            this.richTextBox2.Text = "";
+            this.modifyCatExpTxt.Location = new System.Drawing.Point(117, 64);
+            this.modifyCatExpTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.modifyCatExpTxt.Name = "modifyCatExpTxt";
+            this.modifyCatExpTxt.Size = new System.Drawing.Size(168, 55);
+            this.modifyCatExpTxt.TabIndex = 5;
+            this.modifyCatExpTxt.Text = "";
             // 
             // label24
             // 
@@ -1395,13 +1426,13 @@
             this.label24.TabIndex = 4;
             this.label24.Text = "Açıklama";
             // 
-            // textBox20
+            // modifyCatNameTxt
             // 
-            this.textBox20.Location = new System.Drawing.Point(117, 32);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(168, 20);
-            this.textBox20.TabIndex = 3;
+            this.modifyCatNameTxt.Location = new System.Drawing.Point(117, 32);
+            this.modifyCatNameTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.modifyCatNameTxt.Name = "modifyCatNameTxt";
+            this.modifyCatNameTxt.Size = new System.Drawing.Size(168, 20);
+            this.modifyCatNameTxt.TabIndex = 3;
             // 
             // label25
             // 
@@ -1415,10 +1446,10 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.button11);
-            this.groupBox11.Controls.Add(this.richTextBox1);
+            this.groupBox11.Controls.Add(this.addCatBtn);
+            this.groupBox11.Controls.Add(this.addCatExpTxt);
             this.groupBox11.Controls.Add(this.label23);
-            this.groupBox11.Controls.Add(this.textBox19);
+            this.groupBox11.Controls.Add(this.addCatNameTxt);
             this.groupBox11.Controls.Add(this.label22);
             this.groupBox11.Location = new System.Drawing.Point(355, 34);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
@@ -1429,26 +1460,27 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Yeni Kategori Ekle";
             // 
-            // button11
+            // addCatBtn
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(200, 129);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(84, 32);
-            this.button11.TabIndex = 6;
-            this.button11.Text = "Ekle";
-            this.button11.UseVisualStyleBackColor = false;
+            this.addCatBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addCatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addCatBtn.Location = new System.Drawing.Point(200, 129);
+            this.addCatBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.addCatBtn.Name = "addCatBtn";
+            this.addCatBtn.Size = new System.Drawing.Size(84, 32);
+            this.addCatBtn.TabIndex = 6;
+            this.addCatBtn.Text = "Ekle";
+            this.addCatBtn.UseVisualStyleBackColor = false;
+            this.addCatBtn.Click += new System.EventHandler(this.AddCatBtn_Click);
             // 
-            // richTextBox1
+            // addCatExpTxt
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(117, 64);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(168, 55);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.addCatExpTxt.Location = new System.Drawing.Point(117, 64);
+            this.addCatExpTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.addCatExpTxt.Name = "addCatExpTxt";
+            this.addCatExpTxt.Size = new System.Drawing.Size(168, 55);
+            this.addCatExpTxt.TabIndex = 5;
+            this.addCatExpTxt.Text = "";
             // 
             // label23
             // 
@@ -1460,13 +1492,13 @@
             this.label23.TabIndex = 4;
             this.label23.Text = "Açıklama";
             // 
-            // textBox19
+            // addCatNameTxt
             // 
-            this.textBox19.Location = new System.Drawing.Point(117, 32);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(168, 20);
-            this.textBox19.TabIndex = 3;
+            this.addCatNameTxt.Location = new System.Drawing.Point(117, 32);
+            this.addCatNameTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.addCatNameTxt.Name = "addCatNameTxt";
+            this.addCatNameTxt.Size = new System.Drawing.Size(168, 20);
+            this.addCatNameTxt.TabIndex = 3;
             // 
             // label22
             // 
@@ -1493,8 +1525,8 @@
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.button10);
-            this.groupBox10.Controls.Add(this.button9);
+            this.groupBox10.Controls.Add(this.deleteCatBtn);
+            this.groupBox10.Controls.Add(this.UploadCatBtn);
             this.groupBox10.Location = new System.Drawing.Point(13, 283);
             this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox10.Name = "groupBox10";
@@ -1504,29 +1536,31 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "İşlemler";
             // 
-            // button10
+            // deleteCatBtn
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(143, 41);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(84, 46);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Sil";
-            this.button10.UseVisualStyleBackColor = false;
+            this.deleteCatBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deleteCatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteCatBtn.Location = new System.Drawing.Point(143, 41);
+            this.deleteCatBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.deleteCatBtn.Name = "deleteCatBtn";
+            this.deleteCatBtn.Size = new System.Drawing.Size(84, 46);
+            this.deleteCatBtn.TabIndex = 2;
+            this.deleteCatBtn.Text = "Sil";
+            this.deleteCatBtn.UseVisualStyleBackColor = false;
+            this.deleteCatBtn.Click += new System.EventHandler(this.DeleteCatBtn_Click);
             // 
-            // button9
+            // UploadCatBtn
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(22, 41);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(84, 46);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "Düzenle";
-            this.button9.UseVisualStyleBackColor = false;
+            this.UploadCatBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UploadCatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UploadCatBtn.Location = new System.Drawing.Point(22, 41);
+            this.UploadCatBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.UploadCatBtn.Name = "UploadCatBtn";
+            this.UploadCatBtn.Size = new System.Drawing.Size(84, 46);
+            this.UploadCatBtn.TabIndex = 1;
+            this.UploadCatBtn.Text = "Düzenle";
+            this.UploadCatBtn.UseVisualStyleBackColor = false;
+            this.UploadCatBtn.Click += new System.EventHandler(this.UploadCatBtn_Click);
             // 
             // CategoryListView
             // 
@@ -1717,6 +1751,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
@@ -1829,23 +1865,23 @@
         private System.Windows.Forms.Button urunDuzenleBtn;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button deleteCatBtn;
+        private System.Windows.Forms.Button UploadCatBtn;
         private System.Windows.Forms.ListView CategoryListView;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button modifyCatBtn;
+        private System.Windows.Forms.RichTextBox modifyCatExpTxt;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox modifyCatNameTxt;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button addCatBtn;
+        private System.Windows.Forms.RichTextBox addCatExpTxt;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox addCatNameTxt;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Button button13;
@@ -1857,7 +1893,7 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.ListView reportList;
         private System.Windows.Forms.ColumnHeader columnHeader12;
         private System.Windows.Forms.ColumnHeader columnHeader13;
         private System.Windows.Forms.ColumnHeader columnHeader14;
@@ -1866,32 +1902,34 @@
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.GroupBox groupBox14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.DateTimePicker dtpEnd;
+        private System.Windows.Forms.DateTimePicker dtpStart;
+        private System.Windows.Forms.TextBox search;
+        private System.Windows.Forms.RadioButton rbCategoryName;
+        private System.Windows.Forms.RadioButton rbProductName;
+        private System.Windows.Forms.RadioButton rbCustomer;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.ListView listView5;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.ListView saleListView;
+        private System.Windows.Forms.Button saleListBtn;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox saleCatList;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox saleProductCustomer;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox sellProductCountTxt;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox selectedProductNameTxt;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ColumnHeader columnHeader19;
         private System.Windows.Forms.ColumnHeader columnHeader20;
         private System.Windows.Forms.ColumnHeader columnHeader21;
         private System.Windows.Forms.ColumnHeader columnHeader22;
+        private System.Windows.Forms.Label lblSituation;
+        private System.Windows.Forms.Label label38;
     }
 }

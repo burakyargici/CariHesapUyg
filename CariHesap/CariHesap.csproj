@@ -64,6 +64,7 @@
     <Compile Include="DAL\CategoryHelper.cs" />
     <Compile Include="DAL\CustomerHelper.cs" />
     <Compile Include="DAL\productHelper.cs" />
+    <Compile Include="DAL\SalesHelper.cs" />
     <Compile Include="DAL\UserHelper.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -81,6 +82,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="MODEL\ProductModel.cs" />
+    <Compile Include="MODEL\SaleDepartmentModel.cs" />
     <Compile Include="MODEL\SaveModel.cs" />
     <Compile Include="Products.cs">
       <DependentUpon>Model1.tt</DependentUpon>

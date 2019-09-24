@@ -50,5 +50,19 @@ namespace CariHesap.DAL
             }
             return saveModel;
         }
+        public static List<Products> GetProductsByCategoryId(int categoryId)
+        {
+            using (var che = new CariHesapEntities())
+            {
+                return che.Products.Where(pr => pr.categoryId == categoryId).ToList();
+            }
+        }
+        public static List<ProductModel> GetProductModelsByCategoryId(int categoryId)
+        {
+            using (var che = new CariHesapEntities())
+            {
+                return GetProducts().Where(pr => pr.categoryId == categoryId).ToList();
+            }
+        }
     }
 }
